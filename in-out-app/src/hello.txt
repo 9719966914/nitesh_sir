@@ -1,0 +1,33 @@
+import React, { useEffect, useState } from "react";
+import "./App.css";
+function App() {
+  const [total, setTotal] = useState(0);
+  const [inData, setInData] = useState(0);
+  const [outData, setOutData] = useState(0);
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch("http://localhost:3002/api/data");
+      const result = await response.json();
+      
+
+      
+      
+    };
+    fetchData();
+    const interval = setInterval(fetchData, 1000);
+    return () => clearInterval(interval);
+  }, []);
+  return (
+    <div className="App">
+      <div className="total">Total: {total}</div>
+      <div className="in">
+        {" "}
+        IN<div className="countIN">{inData}</div>{" "}
+      </div>
+      <div className="out">
+        OUT<div className="countOUT">{outData}</div>
+      </div>
+    </div>
+  );
+}
+export default App;
