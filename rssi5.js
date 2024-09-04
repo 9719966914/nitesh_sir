@@ -16,7 +16,7 @@ const localMqttTopic = "Beacon_Data";
 
 // Beacon MAC addresses and gateways MAC addresses
 // const filterMacIds = ["c30000218b1b", "C30000218B1B"];
-const filterMacIds = ["C30000288FFB", "c30000288ffb", "C30000289002", "c30000289002", "C30000289003", "c30000289003", "C30000288FFC", "c30000288ffc","c30000218b1b", "C30000218B1B"];
+const filterMacIds = ["C30000288FFB", "c30000288ffb", "C30000289002", "c30000289002", "C30000289003", "c30000289003", "C30000288FFC", "c30000288ffc","c30000218b1b", "C30000218B1B", "C30000288FFE", "c30000288ffe"];
 // const filterGateways = ["ac233fc18c39"];
 const filterGateways = ["ac233fc18c39", "ac233fc18c3f", "ac233fc179f8"];
 
